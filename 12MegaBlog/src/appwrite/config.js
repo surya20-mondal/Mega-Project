@@ -15,7 +15,7 @@ export class Service {
     }
     async createPost({ tittle, content, slug, featuredImageId, status, userId }) {
         try {
-            return await this.Databases.createDocument(
+            return await this.databases.createDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
